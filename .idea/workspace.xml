@@ -4,9 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="First">
+    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="menu">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/EventManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/Theme.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/clickgui/ClickGui.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/main/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/TestMod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/KeyManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/Mod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/textures/logo/blue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/textures/logo/white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/en_US.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/zh_CN.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/zh_CN.lang" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +54,12 @@
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Nirvana" type="f1a62948:ProjectNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Nirvana" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="forgegradle" type="c8890929:TasksNode$1" />
               </path>
             </expand>
@@ -49,32 +69,73 @@
       </state>
     </system>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2KuwNRb7zWYM0F6IA2ViljLVVP4" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Project/Nirvana",
+    "last_opened_file_path": "D:/Project/Nirvana/src/main/resources/logo",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Nirvana\src\main\resources\logo" />
+      <recent name="D:\Project\Nirvana\src\main\resources" />
+      <recent name="D:\Project\Nirvana\src\main\java\org\encinet\nirvana\until" />
+      <recent name="D:\Project\Nirvana\src\main\java\org\encinet\nirvana" />
       <recent name="D:\Project\Nirvana" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\Nirvana\src\main\resources\assets\nirvana\textures" />
+      <recent name="D:\Project\Nirvana\src\main\resources\shaders" />
       <recent name="D:\Project\Nirvana\src\main\resources" />
+      <recent name="D:\Project\Nirvana\src\main\resources\assets\nirvana\shaders\post" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.Nirvana [runClient]">
+    <configuration name="Nirvana [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <configuration name="Nirvana [runClient]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -99,6 +160,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Nirvana [runClient]" />
+        <item itemvalue="Gradle.Nirvana [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +195,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First" />
-    <option name="LAST_COMMIT_MESSAGE" value="First" />
+    <MESSAGE value="menu" />
+    <option name="LAST_COMMIT_MESSAGE" value="menu" />
   </component>
 </project>
