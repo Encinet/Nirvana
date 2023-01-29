@@ -1,5 +1,6 @@
 package org.encinet.nirvana;
 
+import net.minecraftforge.fml.client.SplashProgress;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
 import net.minecraftforge.fml.common.event.FMLInitializationEvent;
@@ -8,6 +9,9 @@ import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.encinet.nirvana.event.EventManager;
 import org.encinet.nirvana.until.KeyManager;
+import org.lwjgl.opengl.Display;
+
+import java.util.concurrent.ThreadLocalRandom;
 
 @SideOnly(Side.CLIENT)
 @Mod(modid = Nirvana.MODID, name = Nirvana.NAME, version = Nirvana.VERSION, acceptedMinecraftVersions = "1.8.9")
@@ -21,7 +25,9 @@ public class Nirvana
     @EventHandler
     public void preInit(FMLPreInitializationEvent event)
     {
-        // Nothing
+        // title
+        String[] titles = {"Hello World"};
+        Display.setTitle(NAME + " " + VERSION + " | " + titles[ThreadLocalRandom.current().nextInt(titles.length)]);
     }
 
     @EventHandler

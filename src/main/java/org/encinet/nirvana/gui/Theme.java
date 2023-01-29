@@ -8,6 +8,6 @@ import java.awt.*;
 public class Theme {
     // false为浅色
     public static boolean mode = false;
-    public static final int LIGHT_MAIN = new Color(1, 1, 1, 1).getRGB();
-    public static final int DARK_MAIN = new Color(1, 1, 1, 1).getRGB();
+    public static final Color LIGHT_MAIN = new Color(255, 255, 255, 255);
+    public static final Color DARK_MAIN = new Color(50, 67, 112, 255);
 }

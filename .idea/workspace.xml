@@ -5,23 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="menu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/EventManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/Theme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/clickgui/ClickGui.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/main/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/TestMod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/KeyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/Mod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/textures/logo/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/textures/logo/white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/clickgui/CategoryButton.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/GuiDraw.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/MouseXYType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/en_US.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/en_US.lang" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/zh_CN.lang" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/lang/zh_CN.lang" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/Theme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/clickgui/ClickGui.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/clickgui/ClickGui.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/main/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/main/MainMenu.java" afterDir="false" />
     </list>
+    <list id="3b3f95b7-e84d-4db0-9ae8-2f271e10485e" name="Administrator 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -72,6 +66,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -92,7 +87,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/Project/Nirvana/src/main/resources/logo",
+    "last_opened_file_path": "D:/Users/m1708/Desktop/forge-1.16.5-36.2.39-mdk",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -114,7 +109,7 @@
       <recent name="D:\Project\Nirvana\src\main\resources\assets\nirvana\shaders\post" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.Nirvana [runClient]">
+  <component name="RunManager" selected="Gradle.Nirvana [build]">
     <configuration name="Nirvana [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -159,8 +154,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.Nirvana [runClient]" />
         <item itemvalue="Gradle.Nirvana [build]" />
+        <item itemvalue="Gradle.Nirvana [runClient]" />
       </list>
     </recent_temporary>
   </component>
@@ -180,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674843952825</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="menu">
+      <created>1674931548973</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1674931548974</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

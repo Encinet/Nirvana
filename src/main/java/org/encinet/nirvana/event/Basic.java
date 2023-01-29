@@ -3,7 +3,6 @@ package org.encinet.nirvana.event;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiMainMenu;
 import net.minecraft.client.gui.GuiScreen;
-import net.minecraft.client.settings.KeyBinding;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 import net.minecraftforge.fml.common.gameevent.InputEvent;
 import net.minecraftforge.fml.common.gameevent.TickEvent;
@@ -24,8 +23,8 @@ public class Basic {
             // 应用自定义主菜单
             Minecraft mc = Minecraft.getMinecraft();
             GuiScreen currentScreen = mc.currentScreen;
-            MainMenu customMenu = new MainMenu();
             if (currentScreen instanceof GuiMainMenu) {
+                MainMenu customMenu = new MainMenu();
                 mc.displayGuiScreen(customMenu);
             }
         }
