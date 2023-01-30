@@ -4,18 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="menu">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/commands/TestCommand.java" afterDir="false" />
+    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="mixin">
+      <change afterPath="$PROJECT_DIR$/lib/dependencies/mixingradle-0.6-20171001.194726-1-groovydoc.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/dependencies/mixingradle-0.6-20171001.194726-1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/Tweaker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/MixinMinecraft.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/mixins.nirvana.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/CommandManager.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/TestMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/TestMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/gui/main/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/MainMenu.java" afterDir="false" />
     </list>
-    <list id="3b3f95b7-e84d-4db0-9ae8-2f271e10485e" name="Administrator 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +57,8 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="Nirvana" type="f1a62948:ProjectNode" />
-                <item name="运行配置" type="7b0102dc:RunConfigurationsNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="forgegradle" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -70,6 +75,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -81,18 +89,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/codes/Nirvana/Nirvana",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/m1708/Desktop/forge-1.16.5-36.2.39-mdk&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Project\Nirvana\src\main\resources\logo" />
@@ -102,10 +110,11 @@
       <recent name="D:\Project\Nirvana" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Project\Nirvana\lib\dependencies" />
+      <recent name="D:\Project\Nirvana\lib" />
       <recent name="D:\Project\Nirvana\src\main\resources\assets\nirvana\textures" />
       <recent name="D:\Project\Nirvana\src\main\resources\shaders" />
       <recent name="D:\Project\Nirvana\src\main\resources" />
-      <recent name="D:\Project\Nirvana\src\main\resources\assets\nirvana\shaders\post" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.Nirvana [runClient]">
@@ -121,27 +130,6 @@
         <option name="taskNames">
           <list>
             <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="Nirvana [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -176,7 +164,6 @@
       <list>
         <item itemvalue="Gradle.Nirvana [runClient]" />
         <item itemvalue="Gradle.Nirvana [build]" />
-        <item itemvalue="Gradle.Nirvana [clean]" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +190,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674931548974</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change">
+      <created>1674988836210</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1674988836210</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,6 +215,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First" />
     <MESSAGE value="menu" />
-    <option name="LAST_COMMIT_MESSAGE" value="menu" />
+    <MESSAGE value="change" />
+    <MESSAGE value="mixin" />
+    <option name="LAST_COMMIT_MESSAGE" value="mixin" />
   </component>
 </project>

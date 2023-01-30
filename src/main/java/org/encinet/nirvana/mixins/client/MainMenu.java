@@ -1,18 +1,22 @@
-package org.encinet.nirvana.gui.main;
+package org.encinet.nirvana.mixins.client;
 
-import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.*;
 import net.minecraft.client.renderer.GlStateManager;
 import net.minecraft.client.resources.I18n;
 import net.minecraft.util.ResourceLocation;
 import org.encinet.nirvana.gui.Theme;
+import org.spongepowered.asm.mixin.Implements;
+import org.spongepowered.asm.mixin.Interface;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.Overwrite;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-import java.awt.event.KeyEvent;
-import java.io.IOException;
-
-public class MainMenu extends GuiScreen {
-    @Override
-    public void initGui() {
+@Mixin(GuiMainMenu.class)
+public abstract class MainMenu extends GuiScreen {
+    @Inject(method = "initGui", at = @At("HEAD"), cancellable = true)
+    public void initGui(CallbackInfo ci) {
 //        int j = this.height / 4 + 48;
 //        this.buttonList.add(new GuiButton(0, this.width / 2 - 100, j + 72 + 12, 98, 20, I18n.format("menu.options")));
 //        this.buttonList.add(new GuiButton(4, this.width / 2 + 2, j + 72 + 12, 98, 20, I18n.format("menu.quit")));
@@ -32,19 +36,13 @@ public class MainMenu extends GuiScreen {
         buttonList.add(new GuiButton(108, width / 2 - 100, defaultHeight + 24 * 3, "Contributors"));
         buttonList.add(new GuiButton(0, width / 2 - 100, defaultHeight + 24 * 4, 98, 20, I18n.format("menu.options")));
         buttonList.add(new GuiButton(4, width / 2 + 2, defaultHeight + 24 * 4, 98, 20, I18n.format("menu.quit")));
+
+        ci.cancel();
     }
 
-    @Override
-    protected void keyTyped(char typedChar, int keyCode) throws IOException {
-        if (keyCode == 1) {
-            Minecraft.getMinecraft().displayGuiScreen(this);
-        }
-        super.keyTyped(typedChar, keyCode);
-    }
-
-    @Override
-    protected void actionPerformed(GuiButton button) {
-        switch (button.id) {
+    @Inject(method = "actionPerformed", at = @At("HEAD"), cancellable = true)
+    protected void actionPerformed(GuiButton p_actionPerformed_1_, CallbackInfo ci) {
+        switch (p_actionPerformed_1_.id) {
             case 0:
                 // 单人游戏
                 this.mc.displayGuiScreen(new GuiSelectWorld(this));
@@ -66,26 +64,24 @@ public class MainMenu extends GuiScreen {
         // this.mc.shutdown();
         // mods
         //this.mc.displayGuiScreen(new net.minecraftforge.fml.client.GuiModList(this));
+        ci.cancel();
     }
 
-    @Override
-    public void updateScreen() {
-        super.updateScreen();
-    }
-
-    @Override
-    public void drawScreen(int mouseX, int mouseY, float partialTicks) {
+    @Inject(method = "drawScreen", at = @At("HEAD"), cancellable = true)
+    public void drawScreen(int p_drawScreen_1_, int p_drawScreen_2_, float p_drawScreen_3_, CallbackInfo ci) {
         GlStateManager.enableAlpha();
         // theme
         themeApply();
         // super
-        super.drawScreen(mouseX, mouseY, partialTicks);
+        super.drawScreen(p_drawScreen_1_, p_drawScreen_2_, p_drawScreen_3_);
+        // cancel
+        ci.cancel();
     }
 
     /**
      * 主题设置
      */
-    public void themeApply() {
+    private void themeApply() {
         // background
         int main = (Theme.mode ? Theme.DARK_MAIN : Theme.LIGHT_MAIN).getRGB();
         drawRect(0, 0, this.width, this.height, main);

@@ -7,7 +7,6 @@ import java.util.*;
 public class CommandManager {
     private final Map<String[], Command> commandMap = new HashMap<>();
 
-
     public void load() {
         TestCommand testCommand = new TestCommand();
         commandMap.put(testCommand.getKey(), testCommand);
