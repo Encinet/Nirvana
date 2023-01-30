@@ -9,6 +9,6 @@ public class TestMod extends Mod {
 
     @Override
     public void tick() {
-        System.out.println(666);
+        System.out.println("测试Mod加载成功");
     }
 }
