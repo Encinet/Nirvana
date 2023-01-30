@@ -26,7 +26,7 @@ public class Nirvana
     public void preInit(FMLPreInitializationEvent event)
     {
         // title
-        String[] titles = {"Hello World"};
+        String[] titles = {"本客户端处于初期开发阶段，"};
         Display.setTitle(NAME + " " + VERSION + " | " + titles[ThreadLocalRandom.current().nextInt(titles.length)]);
     }
 
