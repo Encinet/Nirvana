@@ -1,6 +1,6 @@
 package org.encinet.nirvana.command;
 
-public abstract class Command {// 有没有检测玩家发消息的事件什么的 你去看javadoc  发发我  group
+public abstract class Command {
     // 命令标识符
     // 例子: /tp @s 1 2 3
     //       |      |

@@ -2,13 +2,13 @@
 {
   "modid": "nirvana",
   "name": "Nirvana",
-  "description": "Test description",
+  "description": "A Minecraft PVP client from China",
   "version": "${version}",
   "mcversion": "${mcversion}",
-  "url": "https://github.com/encinet",
+  "url": "https://github.com/encinet/nirvana",
   "updateUrl": "",
   "authorList": ["Encinet"],
-  "credits": "Optimize your Minecraft, and make it better",
+  "credits": "Optimize your Minecraft on PVP, and make it better.",
   "logoFile": "logo.png",
   "screenshots": [],
   "dependencies": []

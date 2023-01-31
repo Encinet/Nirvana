@@ -26,7 +26,7 @@ public class Basic {
 //        }
     }
     @SubscribeEvent
-    public void onPlayerSendMsg() {
+    public void onPlayerSendMessage() {
 
     }
 }

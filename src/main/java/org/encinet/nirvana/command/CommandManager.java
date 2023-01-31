@@ -12,9 +12,9 @@ public class CommandManager {
         commandMap.put(testCommand.getKey(), testCommand);
     }
 
-    // 返回是否使用了命令前缀
+    // 返回是否使用了命令
     public boolean run(String msg) {
-        if ('`' == msg.charAt(0)) {
+        if (msg.charAt(0) == '`') {
             // 去除`
             String subString = msg.substring(0);
             // 用空格分割 获取参数
@@ -28,7 +28,7 @@ public class CommandManager {
                 Collections.addAll(args, s);
 //                例： `nirvana 1 2 3 4
 //                此时s里面会有[nirvana,1,2,3,4]
-//                删除第一个就变成[1,2,3,4]
+//                删除第一个(Nirvana)，就变成[1,2,3,4]
                 args.remove(0);
                 command.run(args.toArray(new String[0]));
             }
@@ -37,6 +37,7 @@ public class CommandManager {
             return false;
         }
     }
+    // 这里看不懂，抄的
     public Command getCommand(String key) {
         for (Map.Entry<String[], Command> commandEntry : commandMap.entrySet()) {
             for (String k : commandEntry.getKey()) {

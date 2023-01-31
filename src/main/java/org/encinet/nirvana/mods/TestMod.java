@@ -4,7 +4,7 @@ import org.encinet.nirvana.until.Mod;
 
 public class TestMod extends Mod {
     public TestMod() {
-        super("name", "description", false);
+        super("TestMod", "a test mod", false);
     }
 
     @Override

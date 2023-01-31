@@ -21,7 +21,7 @@ public abstract class MixinMinecraft {
             )
     )
     private void inject_createDisplay(CallbackInfo ci) {
-        Display.setTitle("Test Title");
+        Display.setTitle("Mixin Test");
         // ci.cancel() // <-- 如果调用了 CallbackInfo::cancel ，就表示执行完注入方法后目标方法直接return，不再执行原方法剩余的代码。
         // cancel() 方法能被调用的前提是在 @Inject 里设置 cancellable 属性为 true ，否则会抛出异常。
     }
