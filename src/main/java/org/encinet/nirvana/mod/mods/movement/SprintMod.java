@@ -1,18 +1,21 @@
-package org.encinet.nirvana.mods;
+package org.encinet.nirvana.mod.mods.movement;
+
 
 import net.minecraft.client.Minecraft;
-import org.encinet.nirvana.until.Mod;
+import org.encinet.nirvana.mod.mods.Mod;
 
 public class SprintMod extends Mod {
-
     public SprintMod() {
-        super("Sprint", "Automatic sprint", true);
+        super("Sprint", "Auto sprint", false);
     }
-
     @Override
-    public void tick() {
+    public void update() {
+
         if (Minecraft.getMinecraft().gameSettings.keyBindForward.isKeyDown()) {
             Minecraft.getMinecraft().thePlayer.setSprinting(true);
         }
     }
 }
+
+
+

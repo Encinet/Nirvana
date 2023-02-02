@@ -25,8 +25,4 @@ public class Basic {
 //            }
 //        }
     }
-    @SubscribeEvent
-    public void onPlayerSendMessage() {
-
-    }
 }

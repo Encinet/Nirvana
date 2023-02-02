@@ -3,7 +3,9 @@
   "compatibilityLevel": "JAVA_8",
   "package": "org.encinet.nirvana.mixins",
   "client": [
+    "client.InputFix",
     "client.MainMenu",
+    "client.MixinEntityPlayerSP",
     "client.MixinMinecraft"
   ]
 }

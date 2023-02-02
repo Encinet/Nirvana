@@ -19,8 +19,7 @@ public abstract class InputFix {
 
     @Inject(
             method = "handleKeyboardInput",
-            at = @At("HEAD"),
-            cancellable = false
+            at = @At(value = "HEAD", shift = At.Shift.BEFORE)
     )
     private void handleKeyboardInput(CallbackInfo ci) throws IOException {
         char eventCharacter = Keyboard.getEventCharacter();
