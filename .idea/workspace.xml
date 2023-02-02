@@ -4,7 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载" />
+    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="强制疾跑">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/MixinEntityPlayerSP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mod/mods/Mod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mod/mods/ModManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/Command.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/CommandManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/commands/TestCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/InputFix.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/InputFix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/SprintMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mod/mods/movement/SprintMod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/TestMod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/KeyManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/KeyManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/Mod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mixins.nirvana.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mixins.nirvana.json" afterDir="false" />
+    </list>
     <list id="3b3f95b7-e84d-4db0-9ae8-2f271e10485e" name="Administrator 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,14 +232,7 @@
       <option name="project" value="LOCAL" />
       <updated>1675168063552</updated>
     </task>
-    <task id="LOCAL-00006" summary="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载">
-      <created>1675342702274</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1675342702274</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,7 +254,6 @@
     <MESSAGE value="mixin" />
     <MESSAGE value="中文输入" />
     <MESSAGE value="强制疾跑" />
-    <MESSAGE value="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载" />
-    <option name="LAST_COMMIT_MESSAGE" value="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载" />
+    <option name="LAST_COMMIT_MESSAGE" value="强制疾跑" />
   </component>
 </project>

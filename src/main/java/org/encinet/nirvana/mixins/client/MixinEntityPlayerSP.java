@@ -2,7 +2,7 @@ package org.encinet.nirvana.mixins.client;
 
 import net.minecraft.client.entity.EntityPlayerSP;
 import org.encinet.nirvana.Nirvana;
-import org.encinet.nirvana.mod.Mod;
+import org.encinet.nirvana.mod.mods.Mod;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
