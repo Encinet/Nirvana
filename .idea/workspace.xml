@@ -4,21 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="指令的大致框架">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/InputFix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/Nirvana.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/CommandManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/CommandManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/commands/TestCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/command/commands/TestCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/event/Basic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/MixinMinecraft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mixins/client/MixinMinecraft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/TestMod.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/mods/TestMod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/MouseXYType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/encinet/nirvana/until/MouseXYType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/nirvana/textures/logo/white.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/nirvana/textures/logo/white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mcmod.info" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mcmod.info" afterDir="false" />
-    </list>
+    <list default="true" id="154c3572-8499-419c-b0be-1011325c8937" name="变更" comment="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载" />
     <list id="3b3f95b7-e84d-4db0-9ae8-2f271e10485e" name="Administrator 进行的变更" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,18 +72,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "D:/codes/Nirvana/Nirvana/src/main/resources/assets/nirvana/textures/logo",
-    "project.structure.last.edited": "SDK",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/codes/Nirvana/Nirvana&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;SDK&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\codes\Nirvana\Nirvana\src\main\resources\assets\nirvana\textures\logo" />
@@ -216,7 +202,28 @@
       <option name="project" value="LOCAL" />
       <updated>1674988836210</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="中文输入">
+      <created>1675167217699</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1675167217699</updated>
+    </task>
+    <task id="LOCAL-00005" summary="强制疾跑">
+      <created>1675168063552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1675168063552</updated>
+    </task>
+    <task id="LOCAL-00006" summary="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载">
+      <created>1675342702274</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1675342702274</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -236,6 +243,9 @@
     <MESSAGE value="menu" />
     <MESSAGE value="change" />
     <MESSAGE value="mixin" />
-    <option name="LAST_COMMIT_MESSAGE" value="mixin" />
+    <MESSAGE value="中文输入" />
+    <MESSAGE value="强制疾跑" />
+    <MESSAGE value="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载" />
+    <option name="LAST_COMMIT_MESSAGE" value="重写Mod类 &amp;&amp; 所有关于Mixin的内容都无法加载" />
   </component>
 </project>

@@ -38,6 +38,7 @@ enum Keys {
     // 这里不会作为按键绑定主体, 按键绑定控制主要使用mod内部的控制器
     OPEN_CLICK_GUI("click_gui.open", Keyboard.KEY_RSHIFT);
 
+
     // 按键介绍文本
     private final String TEXT;
     // 默认按键
