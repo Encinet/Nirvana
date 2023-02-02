@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 import org.encinet.nirvana.event.EventManager;
-import org.encinet.nirvana.mod.mods.ModManager;
+import org.encinet.nirvana.mod.ModManager;
 import org.encinet.nirvana.until.KeyManager;
 import org.lwjgl.opengl.Display;
 

@@ -2,7 +2,7 @@ package org.encinet.nirvana.mod.mods.movement;
 
 
 import net.minecraft.client.Minecraft;
-import org.encinet.nirvana.mod.mods.Mod;
+import org.encinet.nirvana.mod.Mod;
 
 public class SprintMod extends Mod {
     public SprintMod() {
