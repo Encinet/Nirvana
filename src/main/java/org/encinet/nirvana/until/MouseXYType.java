@@ -16,7 +16,7 @@ public enum MouseXYType {
     RESIZE_RD;// 沿对角线调整大小 右下
 
     // 由边延长range 为检测范围
-    static final int range = 3;
+    static final int range = 10;
 
     // ------------------------------------
     // |   None                           |
@@ -59,25 +59,24 @@ public enum MouseXYType {
                 // 角 右下
                 return RESIZE_RD;
             }
+
             // 边
-            // 到左边的距离 绝对值
-            MouseXYType min;
             int toLeft = Math.abs(mouseX - x);
             int toRight = Math.abs(mouseX - x1);
             int toUp = Math.abs(mouseY - y);
             int toDown = Math.abs(mouseY - y1);
-            min = RESIZE_L;
-            // 4个数取最小 这里不要加else
-            if (toRight < toLeft) {
-                min = RESIZE_R;
+
+            int min = Math.min(Math.min(toLeft, toRight), Math.min(toUp, toDown));
+
+            if (min == toLeft) {
+                return RESIZE_L;
+            } else if (min == toRight) {
+                return RESIZE_R;
+            } else if (min == toUp) {
+                return RESIZE_U;
+            } else {
+                return RESIZE_D;
             }
-            if (toUp < toRight) {
-                min = RESIZE_U;
-            }
-            if (toDown < toUp) {
-                min = RESIZE_D;
-            }
-            return min;
         } else return OUT;
     }
 
@@ -92,9 +91,7 @@ public enum MouseXYType {
      * @return 是否处于矩形的角的检测范围内
      */
     public static boolean inPointRange(int mouseX, int mouseY, int x, int y) {
-        if (mouseX >= x - range && mouseX <= x + range
-            && mouseY >= y - range && mouseY <= y + range) {
-            return true;
-        } return false;
+        return mouseX >= x - range && mouseX <= x + range
+               && mouseY >= y - range && mouseY <= y + range;
     }
 }

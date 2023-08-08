@@ -17,10 +17,10 @@ public class GuiDraw {
     public static void drawRoundedRect(float x, float y, float x1, float y1, float radius, Color color) {
         glPushAttrib(0);
         glScaled(0.5D, 0.5D, 0.5D);
-        x *= 2.0D;
-        y *= 2.0D;
-        x1 *= 2.0D;
-        y1 *= 2.0D;
+        x *= 2.0F;
+        y *= 2.0F;
+        x1 *= 2.0F;
+        y1 *= 2.0F;
         glEnable(GL_BLEND);
         glDisable(GL_TEXTURE_2D);
         glEnable(GL_LINE_SMOOTH);
